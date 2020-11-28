@@ -6,4 +6,4 @@ sname = input("Surname:")
 udata.append(name)
 udata.append(sname)
 #Test
-print(udata[0] +"  y"+udata[1])
+print(udata[0] +"  "+udata[1])
