@@ -1,5 +1,6 @@
 ## Green Duck
 [![Build Status](https://travis-ci.com/Iyeholding/Green_Duck.svg?branch=main)](https://travis-ci.com/Iyeholding/Green_Duck)
+
 This website is an information dictionary.
 
 Please Come!!!
