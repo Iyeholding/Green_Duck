@@ -9,7 +9,7 @@ Start Server Microsoft:
 ```bash
 >>> venv\scripts\activate.bat
 >>> cd green_duck
->>> python manage.py runserver 192.168.0.121:5000
+>>> python manage.py runserver 127.0.0.1:5000
 ```
 
 Html Template:
