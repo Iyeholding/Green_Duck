@@ -1,7 +1,16 @@
-Show Short Uname In Admin: {% firstof user.get_short_name user.get_username %}
+# Commands
+
+Show Short Uname In Admin: *{% firstof user.get_short_name user.get_username %}*
 
 
-Show Long Uname In Admin: {% firstof user.get_long_name user.get_username %}
+Show Long Uname In Admin: *{% firstof user.get_long_name user.get_username %}*
+
+Start Server Microsoft:
+```bash
+>>> venv\scripts\activate.bat
+>>> cd green_duck
+>>> python manage.py runserver 192.168.0.121:5000
+```
 
 Html Template:
 ```Html
