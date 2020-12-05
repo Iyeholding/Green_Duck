@@ -1,13 +1,37 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ heading }}</title>
-  </head>
-  <body>
-    <div class="content">
-      <h1>{{ heading }}</h1>
-      <p>{{ text }}</p>
-    </div>
-  </body>
-</html>
+{% extends "base.html" %}
+{% block body %}
+{% if user.is_authenticated %}
+<!--Loged In Menu-->
+{% else %}
+<!--Loged Out Menu-->
+<div>
+  <div class="header-dark">
+      <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
+          <div class="container"><a class="navbar-brand" href="#">IYEHolding</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse"
+                  id="navcol-1">
+                  <ul class="nav navbar-nav">
+                      <li class="nav-item" role="presentation"><a class="nav-link" href="#">Link</a></li>
+                      <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown </a>
+                          <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                      </li>
+                  </ul>
+                  <form class="form-inline mr-auto" target="_self">
+                      <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search"></div>
+                  </form><span class="navbar-text"><a class="login" href="#">Log In</a></span></div>
+          </div>
+      </nav>
+      <div class="container hero">
+          <div class="row">
+              <div class="col-md-8 offset-md-2">
+                  <h1 class="text-center">Green Duck For Startups</h1>
+                  <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item"></iframe></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+{% endif %}
+{% endblock %}
