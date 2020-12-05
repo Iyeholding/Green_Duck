@@ -2,4 +2,4 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("<h1 style='text-align: center; font-family: sans-serif;'>Hi From IYEHolding</h1>")
+    return render(request, 'index.html', context)
