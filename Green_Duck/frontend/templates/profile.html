@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block body %}
+{% if user.is_authenticated %}
+
+{% else %}
+ You are not loged in: <a href="http://{{ ip }}/admin" target="_blank">Log In</a>
+{% endif %}
+{% endblock %}
+

@@ -10,5 +10,5 @@ def index(request):
      })
 def profile(request):
      return render(request, "profile.html" , {
-          
+          "ip": "192.168.0.121:8000"
      })
