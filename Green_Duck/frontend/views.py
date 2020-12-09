@@ -8,3 +8,7 @@ def index(request):
      "heading": atext[2],
      "text": atext[1]
      })
+def profile(request):
+     return render(request, "profile.html" , {
+          
+     })
