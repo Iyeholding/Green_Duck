@@ -1,0 +1,3 @@
+venv\scripts\activate.bat
+cd green_duck
+python manage.py runserver 127.0.0.1:5000
