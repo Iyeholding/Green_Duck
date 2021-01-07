@@ -27,7 +27,7 @@ jobs:
         pip install django
     - name: RunServer
       run: |
-        venv/scripts/activate
+        source venv/scripts/activate
         python3 manage.py
     - name: Test with pytest
       run: |
